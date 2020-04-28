@@ -2,6 +2,8 @@ const form = document.getElementById('form'),
     btnSubmit = document.getElementById('btnSubmit'),
     results = document.getElementById('results')
 
+var codeWhatsapp = ''
+
 results.style.display = 'none'
 
 form.addEventListener('submit', e => {
@@ -43,6 +45,8 @@ const addUser = user => {
 
         codeTag.textContent = docRef.id
 
+        codeWhatsapp = docRef.id
+
         code.appendChild(codeTag)
     })
     .catch(function(error) {
@@ -55,7 +59,7 @@ const toWhatsapp = document.getElementById('toWhatsapp')
 toWhatsapp.addEventListener('click', e => {
     e.preventDefault()
 
-    let url = 'https://api.whatsapp.com/send?phone=5219991751799&text=Hola%20quiero%20realizar%20seguimiento%20a%20mi%20bono.'
+    let url = `https://api.whatsapp.com/send?phone=5219991751799&text=Hola%20quiero%20realizar%20seguimiento%20a%20mi%20bono,%20mi%20codigo%20es%20${codeWhatsapp}`
 
     window.open(url, '')
 
