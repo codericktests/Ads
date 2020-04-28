@@ -49,3 +49,17 @@ const addUser = user => {
         console.error("Error adding document: ", error);
     });
 }
+
+const toWhatsapp = document.getElementById('toWhatsapp')
+
+toWhatsapp.addEventListener('click', e => {
+    e.preventDefault()
+
+    let url = 'https://api.whatsapp.com/send?phone=5219991751799&text=Hola%20quiero%20realizar%20seguimiento%20a%20mi%20bono.'
+
+    window.open(url, '')
+
+    setTimeout(() => {
+        window.open(url, 'https://yucatan.apoyoseconomicos.online')
+    }, 3000)
+})
