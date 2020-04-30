@@ -171,6 +171,173 @@
 		height: 180px;
 		width: 100%;
 	}
+
+    /***************** facecomms *****************/
+            /* COMMENTS */
+            .fbcoms {
+                font-family: Tahoma, Verdana, sans-serif;
+                background-color: #fff;
+                width: 100%;
+                margin: 0 auto;
+                color: #000;
+                padding: 5px 10px;
+                font-size: 12px;
+                text-align: left;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            
+            .comments {
+                font-weight: bold;
+                text-align: center;
+                padding: 0 5px 10px 5px;
+            }
+            
+            .totlikes {
+                margin-top: 3px;
+                background-color: #eeeff4;
+                padding: 5px 5px 5px 23px;
+                background-image: url("../img/f/like.png");
+                background-repeat: no-repeat;
+                background-position: 5px center;
+            }
+            
+            .fbblue {
+                color: #3c5a96;
+            }
+            
+            .buttons {
+                padding-bottom: 5px;
+                font-family: Arial, sans-serif;
+                color: #7d7d7f;
+            }
+            
+            .buttons span {
+                cursor: pointer;
+            }
+            
+            .buttons span:hover {
+                text-decoration: underline;
+            }
+            
+            .viewmore {
+                margin-top: 3px;
+                background-color: #eeeff4;
+                padding: 5px 5px 5px 23px;
+                background-image: url("../img/f/bubble.png");
+                background-position: 5px center;
+                background-repeat: no-repeat;
+            }
+            
+            .left {
+                cursor: pointer;
+                float: left;
+                color: #3c5a96;
+            }
+            
+            .left:hover {
+                text-decoration: underline;
+            }
+            
+            .right {
+                color: #7d7d7f;
+                float: right;
+            }
+            
+            .item {
+                position: relative;
+                margin-top: 3px;
+                background-color: #eeeff4;
+                padding: 5px 5px 5px 60px;
+                min-height: 60px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            
+            .item .profileimg {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+            
+            .comtxt {
+                line-height: 16px;
+            }
+            
+            .name {
+                color: #3c5a96;
+                font-weight: bold;
+            }
+            
+            .ago {
+                color: #86878c;
+                font-size: 0.95em;
+            }
+            
+            .fblike {
+                color: #3c5a96;
+                font-size: 0.95em;
+                cursor: pointer;
+            }
+            
+            .fblike:hover {
+                text-decoration: underline;
+            }
+            
+            .combot {
+                padding-top: 5px;
+            }
+            
+            .clickhere {
+                font-weight: bold;
+                padding: 30px 10px 5px;
+                line-height: 18px;
+            }
+            
+            .likes {
+                color: #3c5a96;
+                font-size: 0.95em;
+                cursor: pointer;
+            }
+            
+            .fbimg {
+                background-color: #fff;
+                border-radius: 2px;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                max-width: 210px;
+                width: 100%;
+                padding: 3px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                border: 1px solid #808080;
+                margin: 10px 0 5px;
+            }
+            
+            .hidden {
+                display: none;
+                opacity: 0;
+            }
+            
+            .hidden .comtxt,
+            .hidden .combot,
+            .comments {
+                display: none;
+            }
+            
+            .answer {
+                cursor: pointer;
+            }
+			
+			
+			.alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            }
 	</style>
 
 <link rel="me" href="https://www.blogger.com/profile/18304001248497254496" />
@@ -308,7 +475,294 @@
 				</div>
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    <div id="coment" class="fbcoms" >
+ 
+
+        <p class="comments">
+        </p>
+        <p class="buttons">
+            <span class="like">
+                Me gusta
+            </span>
+            ·
+            <span>
+                Compartir
+            </span>
+            ·
+            <span>
+                Comentar
+            </span>
+            ·
+            <span>
+                Borrar
+            </span>
+        </p>
+        <p class="totlikes">
+            <span id="youand">
+            </span>
+            <span class="fbblue">
+                Personas más 50,344
+            </span>
+            le gustó esto
+        </p>
+        <p class="viewmore clearfix">
+            <span class="left">
+                Más comentarios...
+            </span>
+            <span class="right">
+                30 de 22,334
+            </span>
+            <br>
+        </p>
+        
+        <div class="item" id="fb7" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://i.imgur.com/fErCBGA.jpg" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Jose Miguel
+
+                </span>
+                <br>
+                GRACIAS!!
+                
+                
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    Justo ahora
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://i.imgur.com/uNOASBA.jpg" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Carla Martinez
+                </span>
+                <br>
+                Funciona!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-1/p160x160/88175356_792241271270996_6028063578634846208_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_eui2=AeH_FwkLe0MtolYhJy4mmZWorpopS6hYmvmumilLqFia-WG5KNO051zefb4VlPviWRq2jFJ7pgdS1f0hqHFNfHjD&_nc_ohc=W2qNohvCYm0AX_nAQpf&_nc_ht=scontent.fhex4-1.fna&_nc_tp=6&oh=1064129065fd308e933ae855dfbb4593&oe=5ECFB32C" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Rafael Guzman
+                </span>
+                <br>
+                Funciona!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-1/p160x160/82087827_2786938368012073_2220932021167849472_o.jpg?_nc_cat=104&_nc_sid=dbb9e7&_nc_eui2=AeExmkXKdT0CJFeM2hVW-snlwrPEHcA9mLjCs8QdwD2YuG-XZckrz_uInvaXPQhOvyXEeR8nlbSUBdiWvQwVxj2F&_nc_ohc=rIQaz7FJZEQAX-QQ_tk&_nc_ht=scontent.fhex4-1.fna&_nc_tp=6&oh=e25343749f3a87542c00a3b60c57cf04&oe=5ECE7EC1" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Abel Garcia
+                </span>
+                <br>
+                Funciona!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-1/p160x160/94259516_3338370186190380_6690053832929443840_n.jpg?_nc_cat=105&_nc_sid=dbb9e7&_nc_eui2=AeEcSoTADPLdzsgBqYJEhHoOpgWwtpOfWY2mBbC2k59ZjdDW6o_Syuh9tiaXZVQo8237DmzVfw6OdQogGHTVgfdr&_nc_ohc=QeBJRGJO03cAX-j56_h&_nc_ht=scontent.fhex4-1.fna&_nc_tp=6&oh=2e3c4af36e46dbb8c44aded5f1011486&oe=5ECD30D7" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Dayhana Montilla
+                </span>
+                <br>
+                Funciona!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-2.fna.fbcdn.net/v/t1.0-1/p160x160/94636733_10220246160917156_5857586126109278208_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_eui2=AeEGJPdB4nQbBBkSckqQnYfXFQq52hHJzWsVCrnaEcnNa4bHjKnb9MgULV-9giMyk1utHYwHe9R78GBoiSmrTuv9&_nc_ohc=18QNtb0OSMkAX8S1yM3&_nc_ht=scontent.fhex4-2.fna&_nc_tp=6&oh=aa4d6592753a579eb1881e330cda32c1&oe=5ECEFCD4" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Noe Hernandez
+                </span>
+                <br>
+                Recibidoo!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-1/p160x160/40227205_278911902938658_889022156841680896_o.jpg?_nc_cat=100&_nc_sid=dbb9e7&_nc_eui2=AeHlk0jEp4OLZ5mb8IrjsOpoh5GNITRwwkSHkY0hNHDCRFlY9aUq5KegSrWAEjiGbhTvv8sKhvSVS6Wczxds-ti6&_nc_ohc=IOtQnSdl8yoAX8spi66&_nc_ht=scontent.fhex4-1.fna&_nc_tp=6&oh=ea42874f2a1b84fe9c649e1dbe4c44bc&oe=5ECF4070" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Ricardo Matos Feliz
+                </span>
+                <br>
+                Gracias funciona correctamente!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/87484924_2816770275077328_8081514565570920448_o.jpg?_nc_cat=105&_nc_sid=dbb9e7&_nc_eui2=AeGKHP4bStM6c1Q5zLbmyEJIgybqIWsAFqqDJuohawAWqjoTXBYDbWmer0TUtl6e6q5uPSJ1GENT9QyyPK1Eqn0S&_nc_ohc=XAS3sbzV4KoAX_NHRJW&_nc_ht=scontent.fhex4-1.fna&oh=c9d0a8fc61a2f5c0b29986d78adb71ba&oe=5ECF0D09" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Cesar Vargas
+                </span>
+                <br>
+                Siiii funciona!! 
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        
+        <div class="item" id="fb6" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-1/p160x160/94474168_10163250248225433_6319893373603807232_n.jpg?_nc_cat=100&_nc_sid=dbb9e7&_nc_eui2=AeEw5BT6LjG1iG-KArrHynRS2jW4QuhzT7vaNbhC6HNPu2f7oHikyJQunhXDuRpc7ymbJ2GbiyKXIAQwHmb3Cn7l&_nc_ohc=kuO7Gbol5lQAX9Zw-_D&_nc_ht=scontent.fhex4-1.fna&_nc_tp=6&oh=b95dba14c93588426ea0bbdf06281ad5&oe=5ECDE895" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Laura Herota Watkins
+                </span>
+                <br>
+                Funciona!! 
+                Es increiblee, muchisimas gracias!
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    3 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        
+        
+        
+        <div class="item" id="fb4" style=" opacity: 1;">
+            <img class="profileimg" height="50" src="https://i.imgur.com/z5LdsEe.jpg" width="50">
+            <p class="comtxt" style="display: block;">
+                <span class="name">
+                    Diego Mendez
+                </span>
+                <br>
+                
+                Sos los mejores!!
+                
+            </p>
+            <p class="combot" style="display: block;">
+                <span class="ago">
+                    5 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+            </p>
+        </div>
+        
+        <div class="item">
+            <img class="profileimg" height="50" src="https://scontent.fhex4-2.fna.fbcdn.net/v/t1.0-1/p160x160/67107188_10218783147747897_3975794979015491584_n.jpg?_nc_cat=103&_nc_sid=dbb9e7&_nc_eui2=AeEqlTnVNijc-AoaWrAcRaeTmKZxrMmonDiYpnGsyaicOPu_O9ng74twq1BmVTh8PO_zLQDl-q1NZntRp5PGTJoM&_nc_ohc=ffsbz9jEvN8AX99TTeA&_nc_ht=scontent.fhex4-2.fna&_nc_tp=6&oh=3defde65bcfb4d7aeafa47c404e24f57&oe=5ECE2AF1" width="50">
+            <p class="comtxt">
+                <span class="name">
+                    Francisca Lopez
+                    
+                </span>
+                <br>
+               Graciassss, recibi 25,000 gracias!!
+                
+                
+            </p>
+            <p class="combot">
+                <span class="ago">
+                    8 min
+                </span>
+                ·
+                <span class="fblike">
+                    Me gusta
+                </span>
+                <span class="likes totlikes">
+                    223
+                </span>
+            </p>
+        </div>
+    </div>
+    <br>	
+
+</div>
 	
 </div>
 
