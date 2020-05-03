@@ -1,8 +1,27 @@
 const form = document.getElementById('form'),
     btnSubmit = document.getElementById('btnSubmit'),
-    results = document.getElementById('results')
+    results = document.getElementById('results'),
+    complete = document.getElementById('complete'),
+    b6 = document.getElementById('b6'),
+    share = document.getElementById('share'),
+    verify = document.getElementById('verify')
 
 var codeWhatsapp = ''
+
+form.style.display = 'none'
+complete.style.display = 'none'
+verify.style.display = 'none'
+
+b6.addEventListener('click', () => {
+    setTimeout(() => {
+        form.style.display = 'block'
+        complete.style.display = 'block'
+        verify.style.display = 'block'
+
+        b6.style.display = 'none'
+        share.style.display = 'none'
+    }, 5000)
+})
 
 results.style.display = 'none'
 
@@ -33,8 +52,7 @@ const addUser = user => {
     db.collection("users").add(user)
     .then(function(docRef) {
         let code = document.getElementById('code'),
-            codeTag = document.createElement('b'),
-            complete = document.getElementById('complete')
+            codeTag = document.createElement('b')
 
         form.style.display = 'none'
         complete.style.display = 'none'

